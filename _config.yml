@@ -1,11 +1,11 @@
 # Site settings
-author: Ryan S
-title: 
+author: Ryan Spence
+title: My GITHub Brings All the Code to the Yard
 header-img: img/home-bg.png
 email: planetlucid@gmail.com
-copyright_name: Ryan S
+copyright_name: Ryan Spence
 description: > # this means to ignore newlines until "baseurl:"
-  
+  The Dev Diary of Ryan Spence
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  planetlucid
