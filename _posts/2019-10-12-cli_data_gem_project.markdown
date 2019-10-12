@@ -10,7 +10,8 @@ permalink:  cli_data_gem_project
 
 For my first project, I decided to build an interface that shows a user two articles and gives them the choice between focusing on either. I was nervous and excited to start.
 
-<iframe src="https://giphy.com/embed/FZuRP6WaW5qg" width="480" height="443" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/heavy-breathing-FZuRP6WaW5qg">via GIPHY</a></p>
+https://giphy.com/embed/FZuRP6WaW5qg
+
 
 **Overall
 **
