@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Data Gem Project"
-date:       2019-10-12 21:01:01 +0000
+date:       2019-10-12 17:01:01 -0400
 permalink:  cli_data_gem_project
 ---
 
@@ -10,8 +10,7 @@ permalink:  cli_data_gem_project
 
 For my first project, I decided to build an interface that shows a user two articles and gives them the choice between focusing on either. I was nervous and excited to start.
 
-![](https://media.giphy.com/media/FZuRP6WaW5qg/giphy.gifhttp://)
-
+<iframe src="https://giphy.com/embed/FZuRP6WaW5qg" width="480" height="443" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/heavy-breathing-FZuRP6WaW5qg">via GIPHY</a></p>
 
 **Overall
 **
@@ -49,8 +48,7 @@ I have no idea how I fixed it, but i do know that it may have caused another err
 
 Still annoyed that there's something to fix but it's part of the process.
 
-![](https://media.giphy.com/media/1gEbrbxWanjoIPeTwv/giphy.gifhttp://)
-
+https://media.giphy.com/media/1gEbrbxWanjoIPeTwv/giphy.gif
 
 **Scrape
 **
@@ -70,7 +68,7 @@ I only want the best for my app's users so I decided to go with this. In all act
 **What I did when I saw the links appear after the first scrape
 **
 
-![](https://media.giphy.com/media/l41YfcbSoHyk5quLC/giphy.gifhttp://)
+https://media.giphy.com/media/l41YfcbSoHyk5quLC/giphy.gif
 
 
 **Retrospective** 
