@@ -129,4 +129,4 @@ I'm also interested in updating the overall style to be more of a split screen v
 ![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjLutuD8bjmAhXiUN8KHV0VB0kQjRx6BAgBEAQ&url=https%3A%2F%2Fuxplanet.org%2Fbest-practices-for-split-screen-design-ad8507d92e66&psig=AOvVaw2vRpM5sasJwqWfcb3_8EOq&ust=1576541509253460http://)
 
 Here is a walkthrough with the current design and implementation.
-https://www.dropbox.com/s/0m5w7f9x01lin78/Sinatra_Movie.mov?dl=0
+https://www.dropbox.com/s/onpiyt3zj1uig6m/Sinatra_Movie.mov?dl=0
