@@ -62,16 +62,19 @@ end
 
 My overall flow  was as follows:
 
-Step 1 - Create GIT Repo
+### Step 1
+Create GIT Repo
 
-Step 2 - Create File Structure
+### Step 2 
+Create File Structure
 ![](https://p-066764.f2.n0.cdn.getcloudapp.com/items/BluNZEnO/Image+2019-12-15+at+5.49.20+PM.png?v=be09ac5b4c445d6208efe3623a6461f3http://)
 
 
 The views folder contain .erb files what the user would see on the front-end experience.
 
 
-Step 3 - Create Application Controller and add functionality for User Account to see who is logged in.
+### Step 3
+Create Application Controller and add functionality for User Account to see who is logged in.
 
 ```
   helpers do
@@ -92,7 +95,8 @@ Step 3 - Create Application Controller and add functionality for User Account to
     end
 ```
 
-Step 4 - Create a User controller and inherit attributes from the application controller
+### Step 4
+Create a User controller and inherit attributes from the application controller
 ```
 class User < ActiveRecord::Base
     has_secure_password
@@ -105,9 +109,24 @@ Throughout this process, I did basic google searches that led me to certain GEMS
 
 ![](https://p-066764.f2.n0.cdn.getcloudapp.com/items/xQu0WvyK/Image+2019-12-15+at+5.44.21+PM.png?v=87bf44f806a9b77caf8a3aec885baab0http://)
 
-Overall, it was really cool to see our ruby lessons come into play while learning about .ERB files that the user sees. On our end, we can build the VIEWS in HTML within the erb file.
 
-I also noticed that every view had a route and that these views would most likely be items some sort of navigation.
+### Step 5 Views
 
-Here is a walkthrough.
+Since I have a bit of very basic knowledge with HTML, creating the views was a very fun part of the process for me. 
+
+In the future, I'd like to build a layout file that would create visual consistency.
+
+![](https://p-066764.f2.n0.cdn.getcloudapp.com/items/d5ueveDZ/Image+2019-12-15+at+7.14.42+PM.png?v=eae15cc77604745e53da30facd29592chttp://)
+
+# In conlusion: 
+Overall, it was really cool to see our Ruby lessons come into play while learning about .ERB files that the user sees. From a development perspective, we can build the VIEWS in HTML within the erb file.
+
+I also noticed that every view had a route and that these views would most likely be items some sort of navigation. Regarding CSS, I used Bootstrap at first. Then I quickly realized that it has fairly heavy load time.
+
+In the future, it may be cool to add a scraping element to this that pulls movies from a site like https://www.moviefone.com/ while combining it with a dish from a site like https://www.allrecipes.com/recipes/
+
+I'm also interested in updating the overall style to be more of a split screen view.
+![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjLutuD8bjmAhXiUN8KHV0VB0kQjRx6BAgBEAQ&url=https%3A%2F%2Fuxplanet.org%2Fbest-practices-for-split-screen-design-ad8507d92e66&psig=AOvVaw2vRpM5sasJwqWfcb3_8EOq&ust=1576541509253460http://)
+
+Here is a walkthrough with the current design and implementation.
 https://www.dropbox.com/s/0m5w7f9x01lin78/Sinatra_Movie.mov?dl=0
