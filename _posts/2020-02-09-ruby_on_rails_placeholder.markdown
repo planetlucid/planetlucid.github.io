@@ -7,43 +7,14 @@ permalink:  ruby_on_rails_placeholder
 
 
 
-**User Journey**
+The overall requirements for the Ruby on Rails project are to use MVC structure and build upon the concepts we learned in our Sinatra project.
 
-A user signs up to this web app, adds their favorite heroes, types in the hero’s comic appearances, and types in the hero’s team affiliation.  They then, have the ability to view or (possibly filter) by: Hero's name, team and appearances.
+Another goal for this project is to use, identification, authentication, access policy and authorization while showing while allowing users to create an account with another service like Github.
 
-Here's what I did.
-
-First I wrote an overall process based on the criteria that needs to pass.
+Lastly, we don't use scaffolding because it does way too much and would prevent us from understanding the  inner-workings if we don't create it ourselves.
 
 
-**Breakdown**
-
-Hero - Belongs to Team & title
-Comicbook - has many heroes
-Team - has many heroes
-
-
-**Steps**
-
-* Install Rails.
-
-* Set up the Devise gem with Omniauth for GIThub. 
-This Gem handles Sign In, Sign Up, and Account
-
-
-- .Env file - holds git hub ‘Key’ Client ID and ‘Secret’ which is Client Secret 
-    - dotenv-rails - makes the .ENV file work by looking for the .ENV file and loading those values in
-- Gitignore - add .env to gitignore so you don’t commit the it with the secrets to github.
-- ran this
-    - bundle exec spring rake routes to get
-    user_github_omniauth_authorize GET|POST /users/auth/github
-
-
-- Ran this to see path of user callbacks: 
-    rails routes
-
-
-- I was curious about something I noticed in examples I found around the web. I thought: "Whats difference between the following" 
+To start this project, I did a bit of digging around and found greate resources on sites like Dev.to and youtube in general. I was curious about something... I noticed in examples I found around the web. I thought: "Whats difference between.... 
     
 ```
 	bundle exec spring rails 
@@ -55,9 +26,37 @@ and
 rails s
 ```
 
-Spring is a Rails application preloader. It speeds up development by keeping your application running in the background so you don't need to boot it every time you run a test, rake task or migration.
+As it turns out, `Spring` is a Rails application preloader that speeds up development. It keeps your application running in the background so you don't need to boot it every time you run a test, rake task or migration.
 
-After doing the previous steps, I did the following:
+At this point, I started writing down ideas for what the experience would be.
+
+**User Journey**
+
+A user signs up to this web app, adds their favorite heroes, types in the hero’s comic appearances, and types in the hero’s team affiliation.  They then, have the ability to view or (possibly filter) by: Hero's name, team and comic appearances.
+
+Here's what I did. First I wrote an overall process based on the criteria that needs to pass.
+
+To begin building, I wrote a breakdown that I only deviated from when I needed to install or upate a gem or two. Speaking of which Homebrew sent me down a wild path of installing requirements.
+
+**Breakdown**
+
+Hero - Belongs to Team & title
+Comicbook - has many heroes
+Team - has many heroes
+
+
+**First Steps**
+
+* Install Rails.
+
+* Set up the Devise gem with Omniauth for GIThub. This Gem handles Sign In, Sign Up, and Account
+
+* .Env file - holds git hub ‘Key’ Client ID and ‘Secret’ which is Client Secret 
+
+* dotenv-rails - makes the .ENV file work by looking for the .ENV file and loading those values in
+
+* Gitignore - add .env to gitignore so you don’t commit the it with the secrets to github.
+
 
 * Set up has_many requirement.
 
