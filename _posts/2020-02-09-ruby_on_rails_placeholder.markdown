@@ -34,6 +34,8 @@ At this point, I started writing down ideas for what the experience would be.
 
 A user signs up to this web app, adds their favorite heroes, types in the hero’s comic appearances, and types in the hero’s team affiliation.  They then, have the ability to view or (possibly filter) by: Hero's name, team and comic appearances.
 
+![](<Image Here>http://)
+
 Here's what I did. First I wrote an overall process based on the criteria that needs to pass.
 
 To begin building, I wrote a breakdown that I only deviated from when I needed to install or upate a gem or two. Speaking of which Homebrew sent me down a wild path of installing requirements.
@@ -44,12 +46,19 @@ Hero - Belongs to Team & title
 Comicbook - has many heroes
 Team - has many heroes
 
+![](<Image Here>http://)
+
 
 **First Steps**
 
 * Install Rails.
 
+![](<Image Here>http://)
+
+
 * Set up the Devise gem with Omniauth for GIThub. This Gem handles Sign In, Sign Up, and Account
+
+![](<Image Here>http://)
 
 * .Env file - holds git hub ‘Key’ Client ID and ‘Secret’ which is Client Secret 
 
@@ -60,6 +69,9 @@ Team - has many heroes
 
 * Set up has_many requirement.
 
+![](<Image Here>http://)
+
+
 * I wasn't sure what I wanted to be nested so I added this afterwards.
  
 * Added an index view of all entries.
@@ -69,6 +81,8 @@ Team - has many heroes
 * Added Search.
  
 * Added Greeting of actual user name
- 
 
+The final step I took was to look for waays I could refactor the code. I wanted a way to give the user the ability to click their entries and display the nested route.
+ 
+![](<Image Here>http://)
 
