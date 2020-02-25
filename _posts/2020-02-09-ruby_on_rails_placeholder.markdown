@@ -86,3 +86,5 @@ The final step I took was to look for waays I could refactor the code. I wanted 
  
 ![](<Image Here>http://)
 
+This was challenging but fun because I noticed that most of the errors would give hints as to what one should do to get it fixed. I hope to build on this foundation to create something cool with this framework. 
+
