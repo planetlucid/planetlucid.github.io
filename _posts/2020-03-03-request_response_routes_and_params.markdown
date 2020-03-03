@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Request / Response, Routes,  & Params"
-date:       2020-03-03 23:48:20 +0000
+date:       2020-03-03 18:48:21 -0500
 permalink:  request_response_routes_and_params
 ---
 
@@ -28,7 +28,7 @@ Here is mine:
 
 From the example below, when a user types in `/persons/15/comicbooks` , my app (on a hypothetical external server) shows the following:
 
-![](https://share.getcloudapp.com/WnuNl2pZhttp://)
+![](https://share.getcloudapp.com/WnuNl2pZ)
 
 ----------
 
