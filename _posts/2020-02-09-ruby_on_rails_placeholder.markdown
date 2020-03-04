@@ -26,6 +26,7 @@ To better understand this, let’s use example scenario based on my Rails projec
 Here is mine:
 
 ![](https://share.getcloudapp.com/mXuq5dDW)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
 
 From the example below, when a user types in `/persons/15/comicbooks` , my app (on a hypothetical external server) shows the following:
 
