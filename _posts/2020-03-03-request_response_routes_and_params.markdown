@@ -6,9 +6,6 @@ permalink:  request_response_routes_and_params
 ---
 
 
-# Request / Response, Routes,  & Params
-# Ruby On Rails -  Hero List 
-# Request / Response, Routes,  & Params
 
 **What is the Request / Response cycle?**
 
