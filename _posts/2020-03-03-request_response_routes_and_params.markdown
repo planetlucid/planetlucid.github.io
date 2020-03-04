@@ -22,7 +22,8 @@ The Rails router looks at URLs and sends them to a controller's action. It gener
 
 To better understand this, let’s use example scenario based on my Rails project.
 
-Here is mine:
+Here is my routes file.:
+![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropbox.com%2Fs_0C5FF73C1BD1555F7E7848E5EF4CD3AF160731FBE6839001CE9766D10B82E1A9_1583273429549_image.png&hmac=IT%2BoVNyL%2F5TUlPhVd8fh0hmcR%2B8owafy4%2FvM8Gvn1qs%3D&width=1490)
 
 ![](https://share.getcloudapp.com/mXuq5dDW)
 
