@@ -7,6 +7,8 @@ permalink:  request_response_routes_and_params
 
 
 # Request / Response, Routes,  & Params
+# Ruby On Rails -  Hero List 
+# Request / Response, Routes,  & Params
 
 **What is the Request / Response cycle?**
 
@@ -28,16 +30,17 @@ Restaurant Analogy -
 
 Here is how MVC plays into the request response cycle.
 
+Models:
+- Logic behind application. Checks for right or wrong.
 
-    Models - Logic behind application. Checks for right or wrong.
-    
-		Views - 
-        - The front end. Everything the user interacts with.
-        - HTML, CSS, JS, FORMS, ERB (embedded Ruby)
-            - ERB - Template where info about users get’s injected in from controller. 
-            
-    Controllers - The middle man between Models and Views.
-        - The hub that decides what goes where. The controller relays data from the browser to the application, and from the application to the browser.
+Views: 
+- The front end. Everything the user interacts with.
+- HTML, CSS, JS, FORMS, ERB (embedded Ruby)
+- ERB - Template where info about users get’s injected in from controller. 
+
+Controllers:
+- The middle man between Models and Views.
+- The hub that decides what goes where. The controller relays data from the browser to the application, and from the application to the browser.
 
 If we use the restaurant analogy of with Model being Chef - View being the patron - and Controller being the server, then `param` is the specific order placed. We’ll talk about `param` further along.
 
@@ -152,7 +155,7 @@ Let’s look at our controller. First, we have something called a before_action 
 The `before_action` stops us from needing to rewrite the same line of code over and over in multiple functions. In this particular case, the `before_action` is using a private method called `set_comicbook`, so next let’s see what that does further down the controller. 
 What's happening here is that we're asking for for the :id value that comes from `params` 
 and `params` comes from the URL. It can also come from other places like when I submit a form.
-![](https://share.getcloudapp.com/yAuvZX25)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(13).png?raw=true)
 
 
 
@@ -166,9 +169,9 @@ So let’s use the edit form.
 
 
 As soon as I click the edit link on Superman, my rails console shows that I’m specifically editing an object with the ID of 15
-![](https://share.getcloudapp.com/8LuJnGk7)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(12).png?raw=true)
 
-![](https://share.getcloudapp.com/8LuJnGYE)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(14).png?raw=true)
 
 
 Once I actually edit it, we can see Superman has been updated. The parameters we see here now show that the Title for the ID 15 is now “Injustice”.
@@ -185,16 +188,16 @@ Once I actually edit it, we can see Superman has been updated. The parameters we
 
 This is a good way to pass through a `param` that is not created by typing in a form.  After a bit of digging I found that it would go in the comicbook form. Then the params would be accessed in the comicbook controller’s index method.
 
-![](https://share.getcloudapp.com/qGuol1Dv)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/A_Hidden_Field_01.png?raw=true)
 
-![](https://share.getcloudapp.com/wbumKAkn)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/A_Hidden_Field_02.png?raw=true)
 
 
 2 - Inside a link_to
 
 I used this because I needed a way to pass through the parameter without a form.  This passes parameters to another method the controller when a form is unavailable. In this example, there is no form for delete.
 
-![](https://share.getcloudapp.com/v1ur46rO)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Inside_A_Link_To.png?raw=true)
 
 --------
 
@@ -213,7 +216,7 @@ end
 --------
 Furthermore, `params` also helps us safeguard our apps by acting as a filter. This feature is called `strong_params`. It allows you to whitelist what attributes are allowed to be used and saved into the database.
 
-![](https://share.getcloudapp.com/6quBxO1N)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(16).png?raw=true)
 
 
 Those are the basics of `params` . It's a hash-like structure and you can access it with symbols or strings to get the value. It comes from the URL from submitting a form like new or edit.
@@ -221,5 +224,6 @@ Those are the basics of `params` . It's a hash-like structure and you can access
 We produce params and you find it in your rails server output here and you access it from your controllers using params.
 
 --------------------------------------
+
 
 
