@@ -6,11 +6,41 @@ permalink:  request_response_routes_and_params
 ---
 
 
+# Request / Response, Routes,  & Params
+
 **What is the Request / Response cycle?**
 
 To answer this, let’s use an example scenario. A user types a url address into their browser. This is a Request from a client (or browser) to a server. The server, which has the code running this address gives a Response to the browser. The browser shows you the response. In the simplest form, the browser asks for a document and then retrieves the document from the server and then shows the document. The server returns the HTML, CSS, and JS to the browser, which formats and displays it as a webpage to the user. 
 
 In a bit more detail, the browser makes a connection to the server and issues a `get` request to literally get the content.
+
+----------
+
+**MVC**
+
+MVC stands for Model, View, Controller. It’s an intelligent way to build web apps. It’s good for separation of concerns and single responsibility. A web app with all the code in one file would be difficult to read and hard to debug. 
+
+Restaurant Analogy - 
+
+            - Chef - Model
+            - Server - Controller
+            - User/Patron - View
+
+Here is how MVC plays into the request response cycle.
+
+
+    Models - Logic behind application. Checks for right or wrong.
+    
+		Views - 
+        - The front end. Everything the user interacts with.
+        - HTML, CSS, JS, FORMS, ERB (embedded Ruby)
+            - ERB - Template where info about users get’s injected in from controller. 
+            
+    Controllers - The middle man between Models and Views.
+        - The hub that decides what goes where. The controller relays data from the browser to the application, and from the application to the browser.
+
+If we use the restaurant analogy of with Model being Chef - View being the patron - and Controller being the server, then `param` is the specific order placed. We’ll talk about `param` further along.
+
 
 ----------
 
@@ -22,14 +52,14 @@ The Rails router looks at URLs and sends them to a controller's action. It gener
 
 To better understand this, let’s use example scenario based on my Rails project.
 
-Here is my routes file.:
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropbox.com%2Fs_0C5FF73C1BD1555F7E7848E5EF4CD3AF160731FBE6839001CE9766D10B82E1A9_1583273429549_image.png&hmac=IT%2BoVNyL%2F5TUlPhVd8fh0hmcR%2B8owafy4%2FvM8Gvn1qs%3D&width=1490)
+Here is mine:
 
 ![](https://share.getcloudapp.com/mXuq5dDW)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
 
 From the example below, when a user types in `/persons/15/comicbooks` , my app (on a hypothetical external server) shows the following:
 
-![](https://share.getcloudapp.com/WnuNl2pZ)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(6).png?raw=true)
 
 ----------
 
@@ -48,15 +78,39 @@ then the request is dispatched to the controller's `show` action with `{ id: '15
 
 3. Here is the controller action 
 ![](https://share.getcloudapp.com/12u1KelK)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(1).png?raw=true)
 
 4. Here is the corresponding view
-![](https://share.getcloudapp.com/z8uX4ER7)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(1).png?raw=true)
 
 5. Which makes the router generate the path - `/persons/15/comicbooks` for the user to see.
 
 ----------
+**What are Params?
+**
+
+Params is a method that returns an `ActionController::Parameters` object.
+They let the user specify data to a Rails application
+
+A good way to visualize this would be:
+http://www.superherositename.com/?person=15&title=justiceleague
+then `params[:person_id]` would be "15" and `params[:title]` would be "Justice League".
 
 
+
+**What are the ways we get params?
+**
+
+`params` can come from the string of a GET request, submitting a form with POST request, and by the URL being typed directly.
+
+In context:
+
+1. Using a search parameter (`"example.com/?q=bacon"`)
+2. Submitting a form (`"/users/sign_in"`)
+3. Within the URL itself (`"/comicbooks/15"`)
+
+
+----------
 **Role of param as interface w/ browser + controller
 **
 
@@ -67,6 +121,7 @@ Here we we have a table with Heroes and we can do standard actions like:
 `new`, `show`, `edit`, and  `destroy`. 
 
 ![](https://share.getcloudapp.com/lluynjlA)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(3).png?raw=true)
 
 ----------
 
@@ -76,6 +131,7 @@ What in the name of Krypton is this `15` and where is it coming from?
 This is where params enters. To read this from your application, you have to have access to this ID so you can view person 1, person 2 etc. 
 
 ![](https://share.getcloudapp.com/z8uX4EjR)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(4).png?raw=true)
 
 ----------
 
@@ -83,11 +139,13 @@ For this example the id’s are assigned chronologically and automatically. But 
 
 Let’s take a look at how we bring this ID number from the URL (ie the `params`) to our application, so we can use it.  Well if you go to your Rails server output, notice there that in this example we can see  `15` for Superman’s `person_id` . This represents parameters or `params` for short. 
 ![](https://share.getcloudapp.com/GGuN2nYW)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(8).png?raw=true)
 
 
 
 Let’s look at our controller. First, we have something called a before_action that runs before certain listed controller actions.
 ![](https://share.getcloudapp.com/wbumKZmq)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(5).png?raw=true)
 
 
 
@@ -99,12 +157,12 @@ and `params` comes from the URL. It can also come from other places like when I 
 
 
 When we want to show a specific comicbook, we’ll also be using the show method in the controller.
-![](https://share.getcloudapp.com/Qwu7bWlO)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(11).png?raw=true)
 
 
 
 So let’s use the edit form. 
-![](https://share.getcloudapp.com/BluBQj1j)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(7).png?raw=true)
 
 
 As soon as I click the edit link on Superman, my rails console shows that I’m specifically editing an object with the ID of 15
@@ -116,6 +174,7 @@ As soon as I click the edit link on Superman, my rails console shows that I’m 
 Once I actually edit it, we can see Superman has been updated. The parameters we see here now show that the Title for the ID 15 is now “Injustice”.
 
 ![](https://share.getcloudapp.com/p9uKrpYo)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(10).png?raw=true)
 
 ---------
 
@@ -160,5 +219,7 @@ Furthermore, `params` also helps us safeguard our apps by acting as a filter. Th
 Those are the basics of `params` . It's a hash-like structure and you can access it with symbols or strings to get the value. It comes from the URL from submitting a form like new or edit.
 
 We produce params and you find it in your rails server output here and you access it from your controllers using params.
+
+--------------------------------------
 
 
