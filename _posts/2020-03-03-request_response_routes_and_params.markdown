@@ -230,5 +230,5 @@ We produce params and you find it in your rails server output here and you acces
 
 As a visual learner and thinker I wanted a better way to understand.
 To help, I found this diagram - from rubyguides.com
-![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Rails_guide.png?raw=true)
 
