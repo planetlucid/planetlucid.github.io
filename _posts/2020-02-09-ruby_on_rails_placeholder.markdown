@@ -55,7 +55,7 @@ To better understand this, let’s use example scenario based on my Rails projec
 Here is mine:
 
 ![](https://share.getcloudapp.com/mXuq5dDW)
-![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Routes_updated.png?raw=true)
 
 From the example below, when a user types in `/persons/15/comicbooks` , my app (on a hypothetical external server) shows the following:
 
@@ -78,7 +78,7 @@ then the request is dispatched to the controller's `show` action with `{ id: '15
 
 3. Here is the controller action 
 ![](https://share.getcloudapp.com/12u1KelK)
-![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(1).png?raw=true)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Controller_Action.png?raw=true)
 
 4. Here is the corresponding view
 ![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(1).png?raw=true)
@@ -156,8 +156,8 @@ and `params` comes from the URL. It can also come from other places like when I 
 
 
 
-When we want to show a specific comicbook, we’ll also be using the show method in the controller.
-![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/image_preview%20(11).png?raw=true)
+When we want to show a specific comicbook, we would also be using the show method in the controller.
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Comicbook_show.png?raw=true)
 
 
 
