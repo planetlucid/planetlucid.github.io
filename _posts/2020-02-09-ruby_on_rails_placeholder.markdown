@@ -197,6 +197,13 @@ I used this because I needed a way to pass through the parameter without a form.
 ![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Inside_A_Link_To.png?raw=true)
 
 --------
+**To_Param method**
+
+The to_param method determines what rails inserts into a generated link when you use path helpers like link_to and when post_path or edit_post_path.   It's used to generate paths  like `comicbook_path(comicbook)`.
+
+another example:
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/0slvXPIw.png?raw=true)
+
 
 
 **Key Take-Away
@@ -221,4 +228,8 @@ Those are the basics of `params` . It's a hash-like structure and you can access
 We produce params and you find it in your rails server output here and you access it from your controllers using params.
 
 --------------------------------------
+
+As a visual learner and thinker I wanted a better way to understand.
+To help, I found this diagram - from rubyguides.com
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
 
