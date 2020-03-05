@@ -157,7 +157,7 @@ and `params` comes from the URL. It can also come from other places like when I 
 
 
 When we want to show a specific comicbook, we would also be using the show method in the controller.
-![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Comicbook_show.png?raw=true)
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Comicbook_show__.png?raw=true)
 
 
 
