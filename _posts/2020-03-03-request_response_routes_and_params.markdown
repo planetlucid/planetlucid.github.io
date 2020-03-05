@@ -6,7 +6,6 @@ permalink:  request_response_routes_and_params
 ---
 
 
-
 **What is the Request / Response cycle?**
 
 To answer this, let’s use an example scenario. A user types a url address into their browser. This is a Request from a client (or browser) to a server. The server, which has the code running this address gives a Response to the browser. The browser shows you the response. In the simplest form, the browser asks for a document and then retrieves the document from the server and then shows the document. The server returns the HTML, CSS, and JS to the browser, which formats and displays it as a webpage to the user. 
@@ -197,6 +196,13 @@ I used this because I needed a way to pass through the parameter without a form.
 ![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/Inside_A_Link_To.png?raw=true)
 
 --------
+**To_Param method**
+
+The to_param method determines what rails inserts into a generated link when you use path helpers like link_to and when post_path or edit_post_path.   It's used to generate paths  like `comicbook_path(comicbook)`.
+
+another example:
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/0slvXPIw.png?raw=true)
+
 
 
 **Key Take-Away
@@ -222,5 +228,7 @@ We produce params and you find it in your rails server output here and you acces
 
 --------------------------------------
 
-
+As a visual learner and thinker I wanted a better way to understand.
+To help, I found this diagram - from rubyguides.com
+![](https://github.com/planetlucid/planetlucid.github.io/blob/master/img/routes.png?raw=true)
 
