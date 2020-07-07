@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Thoughts on React / Redux"
-date:       2020-07-07 22:15:58 +0000
+date:       2020-07-07 18:15:58 -0400
 permalink:  thoughts_on_react_redux
 ---
 
